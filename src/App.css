@@ -1,0 +1,159 @@
+/* App.css */
+
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Loader */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Títulos e seções */
+h1, h2, h3 {
+  color: #003366;
+}
+
+section {
+  padding: 4rem 1.5rem;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #eaf4ff, #f0f8ff);
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0057a3;
+}
+
+.hero p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Botões principais */
+button, .btn {
+  background-color: #0066B3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #004f88;
+}
+
+/* Serviços */
+.services {
+  background-color: #e9f3fb;
+  padding: 4rem 2rem;
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 102, 179, 0.1);
+  margin: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Projetos */
+.featured-projects {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.featured-projects .tags {
+  margin-top: 1rem;
+}
+
+/* Depoimentos */
+.testimonials {
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #0066B3;
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.call-to-action h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.call-to-action p {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 3rem 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #0066B3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .service-card {
+    max-width: 300px;
+  }
+
+  .services, .testimonials, .featured-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
